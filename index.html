@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cestas Presente Elegantes - Presentes Especiais em Cuiabá</title>
+    <meta name="description" content="Cestas de presente exclusivas entregues em Cuiabá e Várzea Grande. Presentes memoráveis para todas as ocasiões.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner bg-primary text-white py-2 text-center">
+        <div class="container">
+            <p class="m-0"><i class="fas fa-truck me-2"></i> ENTREGAMOS EM CUIABÁ E VÁRZEA GRANDE | FRETE GRÁTIS PARA COMPRAS ACIMA DE R$ 200,00</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg py-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+               <img src="assets/images/r&m-cestas.png" alt="R&M Cestas Presentes" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categorias">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destaques">Destaques</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#como-funciona">Como Funciona</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+                <button id="basket-toggle" class="btn btn-primary ms-3">
+                    <i class="fas fa-shopping-basket me-2"></i>
+                    <span id="basket-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Cestas de Presente <span>Exclusivas</span></h1>
+                <p class="lead">Presentes memoráveis para todas as ocasiões, montadas com produtos selecionados e entregues com carinho</p>
+                <div class="hero-buttons">
+                    <a href="#destaques" class="btn btn-primary btn-lg me-3">Ver Cestas</a>
+                    <a href="#contato" class="btn btn-outline-light btn-lg">Encomendar</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categorias" class="categories py-6">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Nossas Categorias</span>
+                <h2 class="section-title">Presentes para <span>Todas as Ocasiões</span></h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <img src="assets/images/romantica.jpg" alt="Cestas Românticas" class="category-img">
+                        <div class="category-info">
+                            <h3>Românticas</h3>
+                            <p>Para casais e momentos especiais</p>
+                            <a href="#" class="btn btn-outline">Ver Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <img src="assets/images/aniversario.jpg" alt="Cestas Comemorativas" class="category-img">
+                        <div class="category-info">
+                            <h3>Comemorativas</h3>
+                            <p>Aniversários, formaturas e conquistas</p>
+                            <a href="#" class="btn btn-outline">Ver Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-card">
+                        <img src="assets/images/corporativa.jpg" alt="Cestas Corporativas" class="category-img">
+                        <div class="category-info">
+                            <h3>Corporativas</h3>
+                            <p>Presentes profissionais de alto padrão</p>
+                            <a href="#" class="btn btn-outline">Ver Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="destaques" class="products py-6 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Nossos Produtos</span>
+                <h2 class="section-title">Cestas em <span>Destaque</span></h2>
+            </div>
+            <div class="row g-4" id="products-grid">
+                <!-- Produtos carregados via JavaScript -->
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-outline-primary">Ver Todas as Cestas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="como-funciona" class="how-it-works py-6">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Como Funciona</span>
+                <h2 class="section-title">3 Passos <span>Simples</span></h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>1. Escolha</h3>
+                        <p>Selecione uma cesta pronta ou monte a sua com nossos produtos exclusivos</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fas fa-shopping-basket"></i>
+                        </div>
+                        <h3>2. Personalize</h3>
+                        <p>Adicione itens à sua cesta virtual e veja o valor atualizar em tempo real</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="step">
+                        <div class="step-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>3. Finalize</h3>
+                        <p>Envie pelo WhatsApp e receba confirmação imediata com prazo de entrega</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="depoimentos" class="testimonials py-6 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Depoimentos</span>
+                <h2 class="section-title">O que dizem <span>nossos clientes</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Adorei a cesta que comprei para o aniversário da minha mãe! Os produtos são de alta qualidade e a entrega foi super rápida."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/client1.jpg" alt="Ana Silva" class="author-img">
+                            <div>
+                                <h5>Ana Silva</h5>
+                                <span>Cuiabá, MT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Presenteio meus clientes com as cestas corporativas há 2 anos e sempre recebo elogios. Excelente atendimento!"</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/client2.jpg" alt="Carlos Mendes" class="author-img">
+                            <div>
+                                <h5>Carlos Mendes</h5>
+                                <span>Várzea Grande, MT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="rating mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"Comprei a cesta romântica para meu marido e ele amou! A embalagem estava linda e os produtos eram tudo de ótima qualidade."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/client3.jpg" alt="Juliana Oliveira" class="author-img">
+                            <div>
+                                <h5>Juliana Oliveira</h5>
+                                <span>Cuiabá, MT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Area -->
+    <section class="delivery-area py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">Área de Entrega</h2>
+                    <p class="lead mb-4">Entregamos com todo cuidado e carinho em Cuiabá e Várzea Grande.</p>
+                    <ul class="delivery-list">
+                        <li><i class="fas fa-check-circle me-2"></i> Frete grátis para compras acima de R$ 200,00</li>
+                        <li><i class="fas fa-check-circle me-2"></i> Entregas no mesmo dia para pedidos até 12h</li>
+                        <li><i class="fas fa-check-circle me-2"></i> Embalagem especial para presentes</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/mapa-entrega.png" alt="Área de entrega Cuiabá e Várzea Grande" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contato" class="contact py-6">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-subtitle">Contato</span>
+                <h2 class="section-title">Fale <span>Conosco</span></h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <h3 class="mb-4">Dúvidas ou orçamento personalizado?</h3>
+                    <p class="lead mb-4">Estamos à disposição para criar a cesta perfeita para sua ocasião especial.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>(65) 98765-4321</p>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>contato@rmcestas.com.br</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Cuiabá - MT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form class="contact-form shadow">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Seu nome" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Seu email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Seu telefone (com DDD)" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option selected disabled>Assunto</option>
+                                <option>Orçamento de cesta</option>
+                                <option>Dúvida sobre produtos</option>
+                                <option>Pedido especial</option>
+                                <option>Outro assunto</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Sua mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="assets/images/cestas-footer.png" alt="R&M Cestas Presentes" class="footer-logo mb-3">
+                    <p class="mb-4">Presentes especiais para momentos inesquecíveis. Entregamos em Cuiabá e Várzea Grande com todo carinho.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#destaques">Destaques</a></li>
+                        <li><a href="#como-funciona">Como Funciona</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="#">Cestas Românticas</a></li>
+                        <li><a href="#">Cestas Comemorativas</a></li>
+                        <li><a href="#">Cestas Corporativas</a></li>
+                        <li><a href="#">Cestas de Café da Manhã</a></li>
+                        <li><a href="#">Kits Relax</a></li>
+                        <li><a href="#">Cestas Personalizadas</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h4>Contato</h4>
+                    <ul class="contact-info">
+                        <li><i class="fab fa-whatsapp me-2"></i> (65) 998024674</li>
+                        <li><i class="fas fa-envelope me-2"></i> a definir</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Cuiabá - MT</li>
+                    </ul>
+                    <h5 class="mt-4">Horário de Atendimento</h5>
+                    <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 R&M Cestas Presentes. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <img src="assets/images/payment-methods.png" alt="Formas de pagamento" class="img-fluid payment-methods">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/5565998024674" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Basket Sidebar -->
+    <div class="basket-sidebar">
+        <div class="basket-header">
+            <h4>Sua Cesta</h4>
+            <button id="close-basket" class="btn-close"></button>
+        </div>
+        <div class="basket-items" id="basket-items">
+            <!-- Itens serão adicionados aqui -->
+            <div class="empty-basket">
+                <i class="fas fa-shopping-basket"></i>
+                <p>Sua cesta está vazia</p>
+            </div>
+        </div>
+        <div class="basket-footer">
+            <div class="basket-summary">
+                <div class="basket-subtotal">
+                    <span>Subtotal:</span>
+                    <span id="basket-subtotal">R$ 0,00</span>
+                </div>
+                <div class="basket-total">
+                    <span>Total:</span>
+                    <span id="basket-total">R$ 0,00</span>
+                </div>
+            </div>
+            <button id="send-whatsapp" class="btn btn-success w-100">
+                <i class="fab fa-whatsapp me-2"></i> Finalizar pelo WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>
