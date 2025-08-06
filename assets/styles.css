@@ -144,8 +144,24 @@ a:hover {
     transition: all 0.3s ease;
 }
 
+
+@media (max-width: 768px) {
+.navbar-brand img {
+    max-height: 80px;
+    transition: all 0.3s ease;
+}
+}
+
+.navbar.scrolled .navbar-brand img {
+    max-height: 20px;
+}
+
 .navbar.scrolled .navbar-brand img {
     max-height: 40px;
+}
+
+.navbar-toggler-icon {
+    background-color: #000;
 }
 
 .nav-link {
